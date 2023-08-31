@@ -18,7 +18,7 @@
     # What if there is a tie for the highest score? Return both names, or assume no ties?
     # Can I assume all participants have a score?
 
-points = [12, 50, 60]
+points = [10, 500, 60]
 names = ["Pablo", "Jessica", "Chris"]
 
 # Steps:
@@ -26,11 +26,13 @@ names = ["Pablo", "Jessica", "Chris"]
 # Return names[index] from index of points
 
 def get_winner(points, names):
-    winner = (points[0])
+    winner = points[0]
+    index = 0
     for i, e in enumerate(points):
         if winner < e:
             winner = e
-    return(names[i])
+            index = i
+    print(names[index])
     
 get_winner(points, names)
 
