@@ -26,12 +26,12 @@ names = ["Pablo", "Jessica", "Chris"]
 # Return names[index] from index of points
 
 def get_winner(points, names):
-    candidate = (points[0])
-    for e in points:
-        if candidate < e:
-            candidate = e
-    return names[points.index(candidate)]
-
+    winner = (points[0])
+    for i, e in enumerate(points):
+        if winner < e:
+            winner = e
+    return(names[i])
+    
 get_winner(points, names)
 
 # Example:
