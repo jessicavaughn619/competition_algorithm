@@ -30,8 +30,7 @@ def get_winner(points, names):
     for e in points:
         if candidate < e:
             candidate = e
-    position = points.index(candidate)
-    return names[position]
+    return names[points.index(candidate)]
 
 get_winner(points, names)
 
